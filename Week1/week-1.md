@@ -29,6 +29,8 @@
 
 ![image](https://github.com/user-attachments/assets/9fe51c84-87dd-4b57-9588-22a59862db19)
 
+## 인터프리터 vs 컴파일
+![image](https://github.com/user-attachments/assets/210c09ea-235d-4a99-8f94-4aa49c505796)
 
 ## JAVA 프로그램 실행과정 
 
