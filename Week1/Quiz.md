@@ -25,7 +25,7 @@ class TimeCalculator{
 }
 
 
-public class aa{
+public class Main{
 	
 	public static void main(String[] args) {
 		
@@ -34,4 +34,47 @@ public class aa{
 	}
 }
 
+```
+
+<br><br>
+
+
+ + ## 입력받을 정수의 갯수를 입력받고, 해당 갯수만큼의 정수를 입력받아 가장 큰 정수가 무엇인지를 출력하는 프로그램을 작성하라. 
+  > ex. 숫자 갯수 입력=> 3  
+  > 숫자 3개를 입력하세요=> -10 -8 11  
+가장 큰 수는 11입니다.
+
+
+  >※입력받은 정수의 갯수만큼의 공간을갖는 배열을 생성하고, 해당 갯수만큼의 정수를 입력받아 배열에 저장하여 프로그램을 작성해보자.
+
+## 전체 코드 
+``` java
+import java.util.Scanner;
+
+public class Main{
+	 
+	public static void main(String[] args) {
+		
+		Scanner scanner= new Scanner(System.in);
+		
+		int n; //배열의 크기
+		int max=Integer.MIN_VALUE; //입력한 숫자중에서 가장 큰 수, Integer.MIN_VALUE는 정수형 중에서 가장 작은 정수값.
+		
+		System.out.print("입력받을 정수의 갯수 입력=> ");
+		n=scanner.nextInt();
+		
+		int []array=new int[n];
+		
+		System.out.print("숫자 "+n+"개를 입력하세요=> ");
+		for(int i=0; i<array.length; i++){
+			
+			array[i]=scanner.nextInt();
+			
+			if(array[i]>max) 
+				max=array[i];
+			}	
+		System.out.println("가장 큰 수는 "+max+"입니다.");
+		}
+		
+	}
 ```
